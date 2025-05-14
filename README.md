@@ -48,6 +48,6 @@ In this project, **DAX** is used extensively to calculate key business metrics a
       FILTER(Sales, Sales[Employee] = EARLIER(Employees[EmployeeID])), 
       Sales[Amount]
   )
-  - **Tax Impact**: A measure to compute the tax impact on sales based on region.
+ - **Tax Impact**: A measure to compute the tax impact on sales based on region.
   ```DAX
   Tax Impact = SUM(Sales[Amount]) * TaxRate[TaxRate]
