@@ -41,14 +41,14 @@ In this project, **DAX** is used extensively to calculate key business metrics a
       Sales[Amount]
   )
   ### Explanation:
-- **Employee Sales** is a custom measure to aggregate sales per employee.
-- **`EARLIER`** is used to refer to the outer row context (the current employee being evaluated).
-- **`SUMX`** iterates over the filtered sales data and sums up the sales amount for each employee.
+  **Employee Sales** is a custom measure to aggregate sales per employee.
+  **`EARLIER`** is used to refer to the outer row context (the current employee being evaluated).
+  **`SUMX`** iterates over the filtered sales data and sums up the sales amount for each employee.
 - **Tax Impact**: A measure to compute the tax impact on sales based on region.
   ```DAX
   Tax Impact = SUM(Sales[Amount]) * TaxRate[TaxRate]
   ---
 
-### Explanation:
+  ### Explanation:
 - **Tax Impact** calculates the tax amount by multiplying the sum of sales (`Sales[Amount]`) by the region-specific tax rate (`TaxRate[TaxRate]`).
 - The formula assumes you have a `TaxRate` table where tax rates are defined for each region.
