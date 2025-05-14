@@ -22,8 +22,7 @@ In this project, **DAX** is used extensively to calculate key business metrics a
   ```DAX
   Total Sales = SUM(Sales[Amount])
 
-- **Sales Growth**: A DAX measure to calculate the month-over-month sales growth.
-```DAX
+- **Sales Growth**: A DAX measure to calculate the month-over-month sales growth.```DAX
   Sales Growth = 
   VAR CurrentMonthSales = SUM(Sales[Amount])
   VAR PreviousMonthSales = 
