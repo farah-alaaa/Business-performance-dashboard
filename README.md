@@ -34,7 +34,7 @@ In this project, **DAX** is used extensively to calculate key business metrics a
          BLANK(), 
          (CurrentMonthSales - PreviousMonthSales) / PreviousMonthSales)
   - **Employee Performance**: A custom measure to calculate total sales for each employee.
-  ```DAX
+```DAX
   Employee Sales = 
   SUMX(
       FILTER(Sales, Sales[Employee] = EARLIER(Employees[EmployeeID])), 
@@ -45,7 +45,7 @@ In this project, **DAX** is used extensively to calculate key business metrics a
   **`EARLIER`** is used to refer to the outer row context (the current employee being evaluated).
   **`SUMX`** iterates over the filtered sales data and sums up the sales amount for each employee.
 - **Tax Impact**: A measure to compute the tax impact on sales based on region.
-  ```DAX
+```DAX
   Tax Impact = SUM(Sales[Amount]) * TaxRate[TaxRate]
   ---
 
