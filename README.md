@@ -34,7 +34,7 @@ In this project, **DAX** is used extensively to calculate key business metrics a
          BLANK(), 
          (CurrentMonthSales - PreviousMonthSales) / PreviousMonthSales)
   - **Employee Performance**: A custom measure to calculate total sales for each employee.
-```DAX
+  ```DAX
   Employee Sales = 
   SUMX(
       FILTER(Sales, Sales[Employee] = EARLIER(Employees[EmployeeID])), 
