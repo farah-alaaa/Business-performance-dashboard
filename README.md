@@ -8,7 +8,7 @@ This dashboard paints a clear picture of your business operations across various
 
 - 💸 **Total Tax Amount**: Visualizes tax contributions by region and their effect on financial health.
 - 📅 **Sales Growth**: Monthly trends that help you spot growth patterns and take action.
-- 👨‍💼 **Employee Sales Analysis**: Understand how each team member is performing — recognize your stars! ⭐
+- 👨‍💼 **Employee Sales Analysis**: Understand how each team member is performing.
 - 🗺️ **Regional Analysis**: Sales and population data across states help prioritize key markets.
 - 📦 **Package Distribution**: Breakdown of package types and how they move across regions.
 - 🌐 **Sales Across Countries & Cities**: Highlight top-performing areas and uncover untapped potential.
