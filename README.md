@@ -40,8 +40,8 @@ In this project, **DAX** is used extensively to calculate key business metrics a
       FILTER(Sales, Sales[Employee] = EARLIER(Employees[EmployeeID])), 
       Sales[Amount]
   )
-  ### Explanation:
-  **Employee Sales** is a custom measure to aggregate sales per employee.
+### Explanation:
+ **Employee Sales** is a custom measure to aggregate sales per employee.
   **`EARLIER`** is used to refer to the outer row context (the current employee being evaluated).
   **`SUMX`** iterates over the filtered sales data and sums up the sales amount for each employee.
 - **Tax Impact**: A measure to compute the tax impact on sales based on region.
